@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Space+Grotesk&display=swap');
+
+@import './colors';
+
+
+// fonts
+$primary-font: 'Space Grotesk', sans-serif;
+$secondary-font: 'Bree Serif', serif;
+
 h1,
 h2 {
   font-family: $secondary-font;

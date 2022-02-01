@@ -1,0 +1,17 @@
+// Navigation Partial
+@import './colors';
+
+.cd-primary-nav {
+  background: $color-2;
+  ul {
+    display: flex;
+    gap: 1em;
+    li {
+      padding: 1em 0;
+    }
+  }
+  a {
+    padding: 1em;
+  }
+}
+
