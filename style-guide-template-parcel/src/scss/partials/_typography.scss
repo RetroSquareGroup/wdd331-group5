@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Space+Grotesk&display=swap');
 
-@import './colors';
-
-
 // fonts
 $primary-font: 'Space Grotesk', sans-serif;
 $secondary-font: 'Bree Serif', serif;
@@ -58,4 +55,8 @@ p {
     font-size: 1.6rem;
     line-height: 1.6;
   }
+}
+
+figcaption {
+  color:$color-2;
 }
