@@ -19,6 +19,7 @@
   background: $color-2;
   ul {
     display: flex;
+    flex-direction: column;
     gap: 1em;
     li {
       padding: 1em 0;
