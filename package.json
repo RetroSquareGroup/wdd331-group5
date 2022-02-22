@@ -7,7 +7,7 @@
     "watch-html": "parcel src/index.html",
     "watch-css": "node-sass --watch -r -o src/ src/scss/",
     "start": "concurrently \"npm:watch-css\" \"npm:watch-html\"",
-    "predeploy": "rm -rf dist && npm run build-css && parcel build src/index.html --public-url https://ebrentnelson.github.io/wdd331-group5/",
+    "predeploy": "rm -rf dist && npm run build-css && parcel build src/index.html --public-url ./",
     "deploy": "gh-pages -d dist"
   },
   "license": "ISC",
