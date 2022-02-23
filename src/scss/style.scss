@@ -1,3 +1,9 @@
+@import "partials/variables";
+@import "partials/layout";
+@import "partials/navigation";
+@import "partials/typography";
+
+
 * {
   box-sizing: border-box;
 }
@@ -107,12 +113,12 @@ body > * {
 
 .intro header {
   justify-content: flex-end;
-  background-color: orange;
   width: calc(100vw - (100vw - 100%));
   height: 100vw;
   border-radius: 50%;
   padding-bottom: 15%;
   margin-top: -50vw;
+  background-color: $sun;
 }
 
 .summary {
@@ -120,15 +126,15 @@ body > * {
   height: 68vw;
   border-radius: 50%;
   padding: 14.65%;
-  background-color: red;
+  background-color: $mercury;
 }
 
 .preamble {
   width: 125vw;
   height: 125vw;
   border-radius: 50%;
-  background-color: blue;
   padding: 14.65%;
+  background-color: $venus;
 }
 .preamble > * {
   max-width: 100vw;
@@ -141,8 +147,8 @@ body > * {
   width: 130vw;
   height: 130vw;
   border-radius: 50%;
-  background-color: green;
   padding: 14.65%;
+  background-color: $earth;
 }
 .explanation > * {
   max-width: 100vw;
@@ -155,8 +161,8 @@ body > * {
   width: 150vw;
   height: 150vw;
   border-radius: 50%;
-  background-color: orange;
   padding: 14.65%;
+  background-color: $mars;
 }
 .participation > * {
   max-width: 100vw;
@@ -169,8 +175,8 @@ body > * {
   width: 90vw;
   height: 90vw;
   border-radius: 50%;
-  background-color: purple;
   padding: 14.65%;
+  background-color: $jupiter;
 }
 
 .requirements {
@@ -178,7 +184,7 @@ body > * {
   width: 250vw;
   height: 250vw;
   border-radius: 50%;
-  background-color: grey;
+  background-color: $saturn;
 }
 .requirements > * {
   max-width: 100vw;
@@ -190,40 +196,28 @@ body > * {
   width: 100vw;
   height: 100vw;
   border-radius: 50%;
-  background-color: yellow;
   padding: 14.65%;
+  background-color: $uranus;
 }
 
 .design-archives {
   width: 60vw;
   height: 60vw;
   border-radius: 50%;
-  background-color: brown;
+  background-color: $neptune;
 }
 
 .zen-resources {
   width: 70vw;
   height: 70vw;
   border-radius: 50%;
-  background-color: teal;
+  background-color: $pluto;
 }
 
 footer {
-  order: 5;
-  width: 40vw;
-  height: 40vw;
-  border-radius: 50%;
-  background-color: darkorange;
-}
-
-@media all and (min-width: 50em) {
-  body {
-    background-color: blue;
-  }
-}
-
-@media all and (min-width: 73em) {
-  body {
-    background-color: red;
-  }
+  position: absolute;
+  bottom: 0;
+  background-color: $color-2;
+  width: 100%;
+  flex-direction: row;
 }
