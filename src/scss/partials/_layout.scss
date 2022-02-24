@@ -1,13 +1,13 @@
  // media queries
  @mixin MQ($canvas) {
    @if $canvas == S {
-    @media only screen and (min-width: $S) { @content; } 
+    @media only screen and (min-width: $S) { @content; }
    }
    @else if $canvas == M {
-    @media only screen and (min-width: $M) { @content; } 
+    @media only screen and (min-width: $M) { @content; }
    }
    @else if $canvas == L {
-    @media only screen and (min-width: $L) { @content; } 
+    @media only screen and (min-width: $L) { @content; }
    }
  }
 
@@ -19,12 +19,16 @@
 
 // tablet view
 @media all and (min-width: $M) {
+  html,
+  body {
+    font-size: 16px;
+  }
+
   body{
     margin-bottom: .5em;
   }
   .intro header{
-    height: 60vw;
-    margin-top: -25%;
+    margin-top: calc(-90vw + 15rem);
     padding-bottom: $tablet-padding-medium;
     margin-bottom: .5em;
   }
@@ -43,7 +47,7 @@
 }
   .preamble > *{
     max-width: 90vw;
-    
+
   }
   .explanation{
   width: 120vw;
@@ -51,14 +55,14 @@
   padding: $tablet-padding-medium;
   margin-bottom: .5em;
 }
-  
+
   .participation {
     padding: $tablet-padding-big;
     width: 130vw;
     height: 130vw;
     margin-bottom: .5em;
   }
-  
+
   .benefits {
     padding: $tablet-padding-big;
     width: 75vw;
@@ -89,16 +93,18 @@
     height: 50vw;
     margin: -10% 45% 0 10%;
   }
-  
-  
+
+
 }
 
 // large view
-  @media all and (min-width: $L) {
-    
+@media all and (min-width: $L) {
+    html,
+    body {
+      font-size: 18px;
+    }
+
     .intro header {
-      max-width: $L;
-      height: $L;
       padding-bottom: 5%;
     } //over 1750 pixels words go away... can we fix this?
 
