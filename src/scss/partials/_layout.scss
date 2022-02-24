@@ -24,18 +24,23 @@
   }
   .intro header{
     height: 60vw;
+    margin-top: -25%;
     padding-bottom: $tablet-padding-medium;
+    margin-bottom: .5em;
   }
   .summary{
-  width: 48vw;
-  height: 48vw;
+  width: 58vw;
+  height: 58vw;
   padding: $tablet-padding-medium;
-  }
+  margin-bottom: .5em;
+  margin-right: 35%;
+}
   .preamble {
   width: 100vw;
   height: 100vw;
   padding: $tablet-padding-medium;
-  }
+  margin-bottom: .5em;
+}
   .preamble > *{
     max-width: 90vw;
     
@@ -44,26 +49,45 @@
   width: 120vw;
   height: 120vw;
   padding: $tablet-padding-medium;
-  }
+  margin-bottom: .5em;
+}
   
   .participation {
     padding: $tablet-padding-big;
+    width: 130vw;
+    height: 130vw;
+    margin-bottom: .5em;
   }
   
   .benefits {
     padding: $tablet-padding-big;
+    width: 75vw;
+    height: 75vw;
+    margin-bottom: .5em;
   }
   .requirements {
     padding: $tablet-padding-medium;
+    width: 200vw;
+    height: 200vw;
+    margin-bottom: .5em;
   }
   .design-selection {
     padding: $tablet-padding-small;
+    width: 50vw;
+    height: 50vw;
+    margin-top: .5em;
   }
   .design-archives {
     padding: $tablet-padding-small;
+    width: 45vw;
+    height: 45vw;
+    margin-left: 45%;
   }
   .zen-resources {
     padding: $tablet-padding-small;
+    width: 50vw;
+    height: 50vw;
+    margin: -10% 45% 0 10%;
   }
   
   
