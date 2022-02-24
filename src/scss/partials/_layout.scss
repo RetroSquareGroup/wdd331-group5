@@ -71,7 +71,65 @@
 
 // large view
   @media all and (min-width: $L) {
-    body {
-      background-color: red;
+    
+    .intro header {
+      max-width: $L;
+      height: $L;
+      padding-bottom: 5%;
+    } //over 1750 pixels words go away... can we fix this?
+
+    .summary {
+      align-self: flex-start;
+      max-width: 40em;
+      max-height: 40em;
     }
+
+    .preamble {
+      align-self: flex-end;
+      max-width: 55em;
+      max-height: 55em;
+      margin-top: -10%;
+    }
+
+    .participation {
+      align-self: flex-start;
+      max-width: 65em;
+      max-height: 65em;
+    }
+
+    .benefits {
+      align-self: flex-end;
+      max-width: 50em;
+      max-height: 50em;
+    }
+
+    .requirements {
+      max-width: 90em;
+      max-height: 90em;
+    }
+
+    .explanation {
+      max-width: 60em;
+      max-height: 60em;
+      align-self: flex-start;
+    }
+
+    .design-selection {
+      max-width: 55em;
+      max-height: 55em;
+      align-self: flex-end;
+    }
+
+    .design-archives {
+      max-width: $M;
+      max-height: $M;
+      align-self: flex-start;
+    }
+
+    .zen-resources {
+      max-width: 20em;
+      max-height: 20em;
+      margin-bottom: 10%;
+    }
+
   }
