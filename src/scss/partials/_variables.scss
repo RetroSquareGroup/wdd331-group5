@@ -5,6 +5,7 @@ $color-4: #f3d077; //
 $color-5: #2f4260; // background
 $color-6: #000000; // black
 
+// Planets
 $sun: orange;
 $mercury: brown;
 $venus: yellow;
@@ -15,3 +16,13 @@ $saturn: grey;
 $uranus: teal;
 $neptune: blue;
 $pluto: lightblue;
+
+// breakpoints
+$S:     0em;   
+$M:     50em;     
+$L:     73em;   
+
+//Planet Padding Adjustments (Tablet)
+$tablet-padding-big: 5% 14.65% 5% 14.65%;
+$tablet-padding-medium: 10%;
+$tablet-padding-small: 5%;

@@ -1,16 +1,4 @@
-// // breakpoints
-   
- $S:     768px;   
- $M:     1024px;     
- $L:     1600px;   
-
- //Planet Padding Adjustments (Tablet)
- $tablet-padding-big: 5% 14.65% 5% 14.65%;
- $tablet-padding-medium: 10%;
- $tablet-padding-small: 5%;
- 
  // media queries
-
  @mixin MQ($canvas) {
    @if $canvas == S {
     @media only screen and (min-width: $S) { @content; } 
@@ -23,15 +11,14 @@
    }
  }
 
-// // super light grid - it works with the .cd-container class inside style.scss
-
+// super light grid - it works with the .cd-container class inside style.scss
  @mixin column($percentage, $float-direction:left) {
    width: 100% * $percentage;
    float: $float-direction;
  }
 
-
-@media all and (min-width: 50em) {
+// tablet view
+@media all and (min-width: $M) {
   body{
     margin-bottom: .5em;
   }
@@ -81,8 +68,9 @@
   
   
 }
-  
-  @media all and (min-width: 73em) {
+
+// large view
+  @media all and (min-width: $L) {
     body {
       background-color: red;
     }

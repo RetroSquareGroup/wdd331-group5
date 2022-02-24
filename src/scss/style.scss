@@ -1,8 +1,4 @@
 @import "partials/variables";
-@import "partials/layout";
-@import "partials/navigation";
-@import "partials/typography";
-
 
 * {
   box-sizing: border-box;
@@ -221,3 +217,7 @@ footer {
   width: 100%;
   flex-direction: row;
 }
+
+@import "partials/layout";
+@import "partials/navigation";
+@import "partials/typography";
