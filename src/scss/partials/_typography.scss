@@ -36,6 +36,10 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 2rem;
+}
+
 section > h2::before {
   /* number before each section title */
   color: darken($color-4, 15%);
@@ -43,8 +47,9 @@ section > h2::before {
 
 p {
   font-size: 1.4rem;
-  line-height: 1.4;
-  color: lighten($color-2, 25%);
+  line-height: 1.2;
+  font-family: $primary-font;
+  // color: lighten($color-2, 25%);
 
   a {
     color: $color-1;
@@ -53,10 +58,30 @@ p {
 
   @include MQ(S) {
     font-size: 1.6rem;
-    line-height: 1.6;
+    line-height: 1.2;
   }
 }
 
 figcaption {
   color:$color-2;
+}
+
+p a, a {
+  color: deeppink;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+footer a {
+  font-size: 3rem;
 }

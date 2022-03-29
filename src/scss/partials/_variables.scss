@@ -5,16 +5,53 @@ $color-4: #f3d077; //
 $color-5: #2f4260; // background
 $color-6: #000000; // black
 
+//mixin
+@mixin gradient($color) {
+    background: linear-gradient(to top left, $color, $color, lighten($color, 20%), $color, $color, lighten($color, 40%), $color, $color);
+    color: darken($color, 15%);
+    // @include orbitmix($color);
+    animation: orbit 10s linear infinite;
+    background-size: 400% 400%;
+}
+
+// @mixin orbitmix($color) {
+//     @keyframes #{"orbit-"+$color} {
+//     0%{
+//         background: linear-gradient(to top left, $color, lighten($color, 50%));
+//     }
+//     50%{
+//         background: linear-gradient(to top left, lighten($color, 25%), lighten($color, 25%));
+
+//     }
+//     100%{
+//         background: linear-gradient(to bottom right, $color, lighten($color, 50%));
+//     }
+//     }
+// }
+
+
+@keyframes orbit {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 // Planets
 $sun: orange;
 $mercury: brown;
-$venus: yellow;
+$venus: darkmagenta;
 $earth: green;
 $mars: red;
 $jupiter: darkorange;
 $saturn: grey;
 $uranus: teal;
-$neptune: blue;
+$neptune: darkslateblue;
 $pluto: lightblue;
 
 // breakpoints
